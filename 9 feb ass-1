@@ -1,0 +1,23 @@
+#include<stdio.h>
+int main()
+{
+int num =50;
+char a = 'x';
+int *ptr;
+char *ptr1;
+ptr = &num;
+ptr1 = &a;
+printf("\n The address which the pointer holds is %u",ptr);
+printf("\n The address which the pointer holds is %u",ptr1);
+ptr++;
+ptr1+3;
+printf("\n Now the address which the pointer holds is %u",ptr);
+printf("\n Now the address which the pointer holds is %u",ptr1);
+ptr = &num;
+ptr1 = &a;
+ptr--;
+ptr1=ptr1-4;
+printf("\n Now the address which the pointer holds is %u",ptr);
+printf("\n Now the address which the pointer holds is %u",ptr1);
+return 0;
+}
